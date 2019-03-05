@@ -1,1 +1,17 @@
 
+.question-first {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 400px;
+  text-align: center;
+}
+
+.question__item {
+  background-color: tomato;
+  color: #fff;
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}

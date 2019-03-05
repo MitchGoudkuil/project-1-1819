@@ -1,0 +1,22 @@
+{
+  "name": "project-1-1819",
+  "version": "1.0.0",
+  "description": "Een feature die voor een bezoeker in de oba een boek zoekt doormiddel van vragen gebaseerd op interesse, gevoel, genre's etc. Hierdoor wordt er specifiek een boek gekozen met de eigenschappen naar de antwoorden van de bezoeker. Bij elke vraag kan de optie gekozen worden om de feature zelf te laten kiezen waardoor de bezoeker met een boek kan eindigen die hij of zij nooit verwacht had.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MitchGoudkuil/project-1-1819.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MitchGoudkuil/project-1-1819/issues"
+  },
+  "homepage": "https://github.com/MitchGoudkuil/project-1-1819#readme",
+  "dependencies": {
+    "oba-wrapper": "github:maanlamp/OBA-wrapper"
+  }
+}
