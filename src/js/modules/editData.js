@@ -15,6 +15,7 @@ export function cleanData(data) {
        bookSummary : singleItem.summaries && singleItem.summaries.summary && singleItem.summaries.summary._text ? singleItem.summaries.summary._text : "no summary available",
        bookYear : singleItem.publication && singleItem.publication.year && singleItem.publication.year._text ? singleItem.publication.year._text : null,
        genre : singleItem.subjects && singleItem.subjects['topical-subject'] && singleItem.subjects['topical-subject']._text ? singleItem.subjects['topical-subject']._text : null,
+       title: (singleItem.titles[`short-title`] !== undefined) ? singleItem.titles[`short-title`]._text : 'no title'
      }
      return dataObj
    })
@@ -25,7 +26,7 @@ export function filterData(data, value) {
   const questionNumber = 3
   const dataCounter = document.querySelector('.counter')
   let dataLength = slicedData.length
-  dataCounter.innerHTML = dataLength + " boeken opgehaald."
+  dataCounter.innerHTML = dataLength + " boeken over."
   localStorage.setItem(value, JSON.stringify(slicedData));
   buildQuiz(questionNumber, value)
 }
@@ -46,7 +47,6 @@ export function renderData(data) {
     <li class="list-container__list-block__item">
       <a target="_blank" href="${book.detailLink}">
       <img class="small-image" src="${book.bookImg}" alt="">
-      <p>booktitle</p>
       </a>
     </li>
     `

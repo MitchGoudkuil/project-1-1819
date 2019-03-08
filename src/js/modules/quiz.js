@@ -79,6 +79,12 @@ export function removeLoader(){
 
 export function addQuestionListeners(value) {
   const answerButtons = document.querySelectorAll('.answer-list__item');
+
+  setTimeout(function(){
+    const dataCounter = document.querySelector('.counter')
+    dataCounter.classList.remove('counter__noshow')
+  }, 500);
+
   answerButtons.forEach(button => {
     button.addEventListener("click", function() {
       let data = parseToJson(localStorage.getItem(value))
@@ -137,6 +143,5 @@ export function showSpinner(data) {
   const spinnerButton = document.querySelector('.spin-button')
   spinnerButton.addEventListener("click", function() {
     spin()
-    setTimeout(function(){ alert("Hello"); }, 2500);
   })
 }
