@@ -1,20 +1,20 @@
 import { API } from '../../node_modules/oba-wrapper/js/index.js';
 import { getAllData } from './modules/getData.js';
-import { cleanData } from './modules/data.js';
+import { cleanData } from './modules/editData.js';
+import { buildQuiz } from './modules/quiz.js';
 
-const firstButtons = document.querySelectorAll('.question__item');
+const startButton = document.querySelector('.test');
+const titleScreen = document.querySelector('.title-screen');
 
-(function addListeners() {
-  firstButtons.forEach(item => {
-    let buttonValue = item.dataset.value
-    item.addEventListener("click", function() {
-      getAllData(buttonValue)
-    })
-  })
-})()
+let questionNumber = 0
+let value = "1"
 
+startButton.addEventListener("click", function(e) {
+  questionNumber = 1
 
-
+  titleScreen.classList.remove("show")
+  buildQuiz(questionNumber, value);
+})
 
 
 
