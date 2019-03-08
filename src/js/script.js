@@ -1,4 +1,4 @@
-import { API } from '../../node_modules/oba-wrapper/js/index.js';
+import { API } from './oba-wrapper/js/index.js';
 import { getAllData } from './modules/getData.js';
 import { cleanData } from './modules/editData.js';
 import { buildQuiz } from './modules/quiz.js';
