@@ -87,7 +87,7 @@ export function addQuestionListeners(value) {
 
   answerButtons.forEach(button => {
     button.addEventListener("click", function() {
-      let data = parseToJson(localStorage.getItem(value))
+      let data = parseToJson(localStorage.getItem('boek'))
       filterData(data, value)
     })
   })
@@ -97,7 +97,7 @@ export function addThirdListeners(value) {
   const answerButtons = document.querySelectorAll('.answer-list__item');
   answerButtons.forEach(button => {
     button.addEventListener("click", function() {
-      let data = parseToJson(localStorage.getItem('Komedie'))
+      let data = parseToJson(localStorage.getItem('boek'))
        filterDataAgain(data)
     })
   })
