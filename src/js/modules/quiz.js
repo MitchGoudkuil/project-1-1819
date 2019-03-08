@@ -22,9 +22,9 @@ export function json() {
   {
     "id": 3,
     "img": "./src/img/seamless.jpg",
-    "question": "Waar heb je zin in?",
+    "question": "Heb je veel tijd?",
     "tag": "Vraag 3",
-    "answers": ['Guus', 'Dennis', 'Folkert'],
+    "answers": ['Ja', 'Nee', 'Misschien'],
   }]
 }
 
