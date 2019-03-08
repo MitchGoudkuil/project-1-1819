@@ -1,5 +1,6 @@
 import { cleanData } from './editData.js';
 import { buildQuiz, showAmount, showLoader, removeLoader } from './quiz.js';
+import { API } from './oba-wrapper/js/index.js';
 
 const types = document.querySelector(".types");
 
